@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="410" viewBox="0 0 1280 410" role="img" aria-labelledby="title desc">
+  <title id="title">English in the Japanese slot — OM-5 Mark II research</title>
+  <desc id="desc">Native E148, official firmware 1.1, resource-only r01. The Japanese descriptor selects an English-based table while the original Japanese font remains unchanged. One owner-reported camera with partial functional acceptance.</desc>
+  <rect width="1280" height="410" rx="18" fill="#f6f3eb"/>
+  <rect x="1" y="1" width="1278" height="408" rx="17" fill="none" stroke="#cdd5cf" stroke-width="2"/>
+  <circle cx="75" cy="53" r="15" fill="none" stroke="#096b5b" stroke-width="8"/>
+  <text x="111" y="59" fill="#142b31" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1.4">OM-5 MARK II · RESEARCH</text>
+  <text x="64" y="111" fill="#096b5b" font-family="Consolas, monospace" font-size="15" letter-spacing="1.4">NATIVE E148 / FIRMWARE 1.1 / RESOURCE-ONLY r01</text>
+  <text x="60" y="189" fill="#142b31" font-family="Arial, sans-serif" font-size="67" font-weight="700" letter-spacing="-2">English in the</text>
+  <text x="60" y="262" fill="#142b31" font-family="Arial, sans-serif" font-size="67" font-weight="700" letter-spacing="-2">Japanese slot.</text>
+  <text x="64" y="306" fill="#526369" font-family="Arial, sans-serif" font-size="22">Source, tests and evidence for a reproducible resource change.</text>
+  <rect x="840" y="58" width="376" height="66" rx="9" fill="#fffdf8" stroke="#b8cbbf"/>
+  <text x="862" y="83" fill="#526369" font-family="Consolas, monospace" font-size="13">JAPANESE DESCRIPTOR · RECORD 10</text>
+  <text x="862" y="108" fill="#142b31" font-family="Arial, sans-serif" font-size="21" font-weight="700">Select the English-based table</text>
+  <path d="M1028 136 V159 M1020 151 L1028 159 L1036 151" fill="none" stroke="#096b5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="840" y="174" width="376" height="66" rx="9" fill="#e1eee7" stroke="#b8cbbf"/>
+  <text x="862" y="199" fill="#096b5b" font-family="Consolas, monospace" font-size="13">EXISTING ENGLISH + 39 RESEARCH TRANSLATIONS</text>
+  <text x="862" y="224" fill="#142b31" font-family="Arial, sans-serif" font-size="21" font-weight="700">4,909 string IDs</text>
+  <rect x="840" y="258" width="376" height="48" rx="9" fill="#fffdf8" stroke="#b8cbbf"/>
+  <circle cx="864" cy="282" r="5" fill="#096b5b"/>
+  <text x="881" y="289" fill="#355158" font-family="Arial, sans-serif" font-size="19">Original Japanese font retained</text>
+  <path d="M64 333 H1216" stroke="#cdd5cf"/>
+  <rect x="64" y="352" width="12" height="12" rx="3" fill="#80451a"/>
+  <text x="90" y="366" fill="#80451a" font-family="Arial, sans-serif" font-size="20" font-weight="600">One owner-reported camera · partial functional acceptance</text>
+  <text x="1216" y="366" text-anchor="end" fill="#526369" font-family="Consolas, monospace" font-size="14">26 NOV 2026</text>
+</svg>
