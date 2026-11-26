@@ -1,0 +1,19 @@
+OM-5 Mark II Japanese-slot English research
+Copyright 2026 OM-5 II JP English research contributors
+
+Original source code and original documentation in this export are offered under
+the Apache License, Version 2.0. See LICENSE.
+
+Format knowledge and independent validation relied on the following projects:
+- OMKit, Copyright 2026 The OMKit Authors; software Apache-2.0.
+- Caduceus for OM-5, Copyright 2026 xulfr and contributors; Apache-2.0.
+- Its OE container-format lineage credits cakelesscoder/caduceus-ep7 and
+  androidfanman/caduceus-om3, Apache-2.0.
+- OM-Emu and db firmware provided emulator research and localization evidence.
+See docs/credits.md for precise revisions, roles, and license boundaries.
+
+No upstream project endorses this experiment. No proprietary firmware, decoded
+vendor string tables, fonts, screenshots, or closed patcher are distributed here.
+The license does not grant rights to firmware supplied separately by a user.
+OM SYSTEM, Olympus and camera names belong to their respective owners and are
+used to identify the research target. This project is not affiliated with OMDS.

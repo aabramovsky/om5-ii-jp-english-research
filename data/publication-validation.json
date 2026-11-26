@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-26",
+  "python_version": "3.9.13",
+  "tests": {
+    "command": "python -B -m unittest discover -s tests -v",
+    "exact_stock_input_supplied": true,
+    "run": 41,
+    "passed": 41,
+    "failed": 0,
+    "skipped": 0
+  },
+  "tests_without_stock": {
+    "run": 41,
+    "passed": 39,
+    "failed": 0,
+    "skipped": 2
+  },
+  "tested_files_sha256": {
+    "data/english_gap_translations.json": "2612706e25d98170a22cab76bfa65ab1f7f76ae6bdbc8b605dce127e148fd97a",
+    "src/offline_firmware.py": "31e26a0297db97d61b252b3ea4198fb629deaca21c9243778d8f764c3fdde8b1",
+    "src/resource_candidate.py": "6b09cdd6815a20427685516566093c7d45544a9da7c133a93e9245bbb57694f7",
+    "src/resource_package.py": "bc7328e4fed08bce9fec21a7874c6993cce445438fb305773c93e2b8382e2d07",
+    "tests/test_offline_firmware.py": "e0de193d937ccd3be24fbb741569264e52750954a504e21a5fbefb63eb985481",
+    "tests/test_reproduce.py": "8d93624fe2e35d2a9d27a62c29f00fa295f363976ec97e9fed988f747e812e05",
+    "tests/test_resource_candidate.py": "c94e645ca7e3d37c7e6c6b13f678d24cf1d31b6c5db599515d6974c359989173",
+    "tests/test_resource_package.py": "b649f925b40a96c4dc7a921fc88d493add934665efd3e105437877d58cb5be38",
+    "tools/reproduce.py": "e5ce52519272ad8bf42217675f4095bcb36f6e40047f50d84184874f66eb7b08"
+  },
+  "reproduction": {
+    "command": "python -B tools/reproduce.py --stock <exact-stock> --output-dir <new-external-directory>",
+    "resource_bytes": 12582912,
+    "resource_sha256": "82aebb31264c29ce64921f8cecdc8a431a780df6d281d14b5706a2f85dc602fc",
+    "matches_owner_tested_r01": true,
+    "stock_resource_sha256": "ff68b7bf98b1f7ff90a69b0d46c1c3e2c68673021bbc94f93c7b39b196fdd2cf",
+    "disk_readback_verified": true
+  },
+  "firmware_outputs_included": false,
+  "hardware_actions_during_publication_preparation": false,
+  "limits": "The fingerprints bind this test record to code, tests and translation input, not every prose revision. Physical result remains one owner-reported camera with partial acceptance."
+}

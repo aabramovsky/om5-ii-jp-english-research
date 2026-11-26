@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+output/
+*.BIN
+*.bin
+*.research-bin
+*.decoded
+*.dump
+*.pcap*
+*.zip
+overlay.json

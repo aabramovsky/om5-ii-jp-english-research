@@ -1,0 +1,18 @@
+{
+  "model": "native E148 / OM-5 Mark II",
+  "base_firmware": "1.1",
+  "stock_sha256": "9de5d77e1d290fa2ed4ebc7d75cee0ed490befbc89566722467d1d421d66d637",
+  "full_candidate_sha256": "68f5d1e8f7c2ed7c64a238b0f9ccfb8446ae9c78117ed632df930c7f44e16ad5",
+  "resource_sha256": "82aebb31264c29ce64921f8cecdc8a431a780df6d281d14b5706a2f85dc602fc",
+  "stock_resource_sha256": "ff68b7bf98b1f7ff90a69b0d46c1c3e2c68673021bbc94f93c7b39b196fdd2cf",
+  "resource_bytes": 12582912,
+  "component": "0101",
+  "string_count": 4909,
+  "non_vendor_gap_translations": 39,
+  "hardware_bodies_reported": 1,
+  "hardware_result_date": "2026-11-26",
+  "post_install_acceptance": "partial_owner_report",
+  "full_ui_verified": false,
+  "recovery_proven": false,
+  "contains_firmware": false
+}
