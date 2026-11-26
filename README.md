@@ -12,6 +12,7 @@
 <p align="center">
   <a href="#the-result">The result</a> ·
   <a href="#how-it-works">How it works</a> ·
+  <a href="#installation-on-one-camera">Installation experience</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#evidence-and-limits">Evidence</a> ·
   <a href="AGENT_CONTEXT.md">For AI agents</a>
@@ -21,7 +22,7 @@
 
 ## The result
 
-**One owner of a Japanese-market OM-5 Mark II reported a normal boot and English menus after installing the resource-only r01 output.** Subsequent functional testing was partial, with no issue reported in the subset tried. The completed subset was not specified.
+**One owner of a Japanese-market OM-5 Mark II reported a normal boot and English menus after installing the resource-only r01 output.** The owner subsequently confirmed that the camera works overall, while noting that every menu item was not checked. Individual checklist results and full UI coverage remain unverified.
 
 This repository explains the experiment and provides the source code, tests and exact hashes needed to reproduce its bytes offline. It contains **no firmware binaries**, full vendor string tables or font blobs.
 
@@ -62,6 +63,16 @@ flowchart LR
 The new table fits within the native 392,192-byte string buffer, leaving 73,728 bytes of headroom. Valid pointers and glyphs do not prove every line fits every screen.
 
 → [Exact offsets and expected bytes](docs/design.md) · [The 39 non-vendor translations](data/english_gap_translations.json)
+
+## Installation on one camera
+
+The owner's route was:
+
+1. **Official firmware 1.1 first.** The camera was updated through OI.Share and checked for normal operation. Any manufacturer-supported route that installs exactly 1.1 can establish this baseline; r01 itself does not upgrade 1.0 to 1.1 and is not validated for another version.
+2. **The SD update with OK held.** The exact resource-only r01 was copied to `DCOLYMP/E1489999.BIN` on the card and its size/hash checked again after reconnecting the card. With a full battery, USB disconnected and the camera off, the owner inserted the card, held **OK**, and switched on. OK remained held through steady illumination and then blinking, including a couple of extra minutes while awaiting guidance. The minimum required hold time is not established.
+3. **Normal restart and English menus.** After the reported completion sequence, the owner released OK, switched off, removed the update card after power-off, and started normally without OK. English menus appeared. The update file was removed before reusing the card. The owner's assessment: it works on this camera; every menu item has not been tested.
+
+**Read the [complete short account, exact file identity and stop conditions](docs/hardware-result.md#installation-sequence-used) before attempting to use this sequence.** OK alone does not change the language: it starts the card updater when the correctly named file is present. Do not interrupt steady illumination or an unclear update state; blinking alone is not proof of success. This records one experimental installation, with recovery still unproven.
 
 ## Quick start
 
@@ -141,7 +152,7 @@ The tool has no camera transport, SD discovery, updater filenames or automatic i
 
 Earlier emulator work used synthetic settings, substituted resource reads and modeled peripherals. Some startup/UI paths remained unresolved for stock as well as candidate. Raw emulator harnesses and logs are not bundled here; this export reproduces the transformation and parser tests.
 
-The reviewed r01 physical trial procedure is **not included**. The historical report cites OMKit's updater description, which belongs to a different loader installation procedure. No independent screen recording, flash readback or failed-resource recovery experiment was performed.
+The [hardware report](docs/hardware-result.md#installation-sequence-used) now includes the short installation sequence used on this camera, including the owner's OK-button timing clarification. The full internal review and approval records are not included. OMKit is cited for the SD-updater entry mechanism; its loader package was not installed. No independent screen recording, flash readback or failed-resource recovery experiment was performed.
 
 → [Validation and recovery limitations](docs/validation.md) · [One-camera report](docs/hardware-result.md)
 

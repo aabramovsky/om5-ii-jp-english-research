@@ -45,7 +45,7 @@
   <div class="reading">
   <p>The starting point was a Japanese-market OM SYSTEM OM-5 Mark II with Japanese menus. The goal was an English interface while changing as little of the camera's firmware as practical.</p>
   <p>The official firmware already contains English text. This experiment builds a new string resource from it and directs the Japanese language record to that resource. The original Japanese font is retained. Where the English table has an empty entry and the Japanese table has text, the build supplies one of <strong>39 explicitly identified research translations</strong>.</p>
-  <p>The owner installed the resulting resource-only package once and reported that the camera booted normally with English menus. Subsequent functional testing was partial, with no problem reported in the unspecified subset tried.</p>
+  <p>The owner installed the resulting resource-only package once and reported that the camera booted normally with English menus. A later follow-up confirmed that the camera works overall, while noting that every menu item has not been checked. Individual checklist results remain unverified.</p>
   </div>
   <div class="cards">
     <div class="card"><div class="stat">0101</div><p>The only component included in the experimental package: resources.</p></div>
@@ -66,7 +66,16 @@
     <li><b>Perform one explicitly approved trial.</b> After the exact file and reviewed procedure were approved, the owner operated the camera's SD updater. The reported lamp sequence was steady, then blinking. A later normal boot without the update card showed English menus, according to the owner.</li>
     <li><b>Preserve the limits of the result.</b> The update file was removed and its absence checked. The owner reported only a partial functional pass. No second installation or destructive recovery experiment followed.</li>
   </ol>
-  <p class="small">The <a href="docs/hardware-result.md">hardware report</a> summarizes the historical r01 trial and cites OMKit's description of the updater. The reviewed r01 trial procedure is not included in this export. OMKit's loader installation instructions are not this experiment's procedure. The original one-trial permission does not authorize another installation.</p>
+  <div class="callout" id="installation">
+    <h3>Installation on this camera, in three steps</h3>
+    <ol>
+      <li><b>Official 1.1 first.</b> The owner used OI.Share; another manufacturer-supported route to exactly 1.1 can establish the baseline. This resource patch does not upgrade 1.0 or cover another firmware version.</li>
+      <li><b>Verified file, then OK at power-on.</b> The exact resource-only r01 was copied to <code>DCOLYMP/E1489999.BIN</code> and its size/hash checked after reconnecting the card. With a full battery and USB disconnected, the card was inserted into the powered-off camera. The owner held OK while switching on and throughout steady illumination and blinking. OK stayed held for a couple of extra minutes awaiting guidance; that delay is not established as necessary.</li>
+      <li><b>Restart normally.</b> After the reported completion sequence, the owner released OK, switched off, removed the card after power-off and started without OK. English menus appeared. The update file was removed before reusing the card. The camera works for this owner; every menu item has not been tested.</li>
+    </ol>
+    <p class="small"><b>Read the whole sequence before starting.</b> The <a href="docs/hardware-result.md#installation-sequence-used">short installation account</a> includes exact file identity, button-timing limits and stop conditions. Do not interrupt steady illumination or an unclear update state. OK alone does not change the language, and blinking alone does not prove success. Recovery remains unproven.</p>
+  </div>
+  <p class="small">The SD-updater mechanism comes from OMKit's pinned documentation; no OMKit loader was installed. This is one historical resource-only trial. The original one-trial permission does not authorize another installation.</p>
 </section>
 <section class="chapter" id="method">
   <span class="number">03 / THE MECHANISM</span>

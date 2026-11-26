@@ -16,6 +16,8 @@ historical approvals do not expand it.
 - Post-install acceptance: **partial owner report**; no issues reported in the
   subset tried, but that subset was not enumerated. Do not mark individual
   camera functions, full UI coverage or reliability as passed.
+  A later owner follow-up says the camera works overall, with every menu item
+  not checked; this improves the ordinary-use account, not checklist coverage.
 - Method: replace the Japanese string resource selected by descriptor 10 with
   an appended English-based resource, retaining the original Japanese font.
   Existing English text is used wherever populated; 39 gaps have research
@@ -42,7 +44,7 @@ All paths below are relative to the package root.
 | `START_HERE.html` | Standalone English human guide; no external assets |
 | `data/profile.json` | Compact target, hashes and evidence flags |
 | `docs/design.md` | Resource structure and exact transformation |
-| `docs/hardware-result.md` | One-camera sequence and evidence limits |
+| `docs/hardware-result.md` | Short installation sequence used, exact file identity, OK timing and evidence limits |
 | `docs/validation.md` | Supplied checks, historical analysis and unresolved risk |
 | `data/publication-validation.json` | Recorded export test/reproduction result |
 | `docs/credits.md`, `NOTICE`, `LICENSE` | Pinned sources, attribution and license boundaries |
@@ -288,6 +290,17 @@ reproduction gap; do not invent files or assert that the package reruns them.
    menus, according to the owner. The lamp report alone was not flash readback.
 5. Owner removed the update file; its absence was verified locally.
 6. Owner reported a partial functional pass without identifying every tested item.
+   Later clarified that the camera works overall, while every menu item has not
+   been checked. The owner also clarified that OK remained held through the steady
+   lamp and blinking, including a couple of minutes awaiting the agent's response,
+   and was released only after guidance. This does not establish a minimum hold
+   time or a required extra delay. The pinned upstream guide does not specify the
+   earliest release moment. See `docs/hardware-result.md#installation-sequence-used`.
+
+Any future operator-facing procedure must present the complete sequence,
+completion/stop conditions and button handling before power-on. Do not make a
+person wait for live agent replies during a firmware write. Do not substitute an
+invented timer or unverified early-release instruction for the recorded evidence.
 
 The one-trial authorization was consumed. No additional installation, downgrade,
 rescue, factory-data operation or arbitrary device probe is authorized by this
